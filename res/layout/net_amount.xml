@@ -3,43 +3,107 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        >
     <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" android:background="#ffffff">
+            android:layout_height="fill_parent"
+            android:background="@drawable/background">
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TNEB UNIT CALCULATOR"
-                android:id="@+id/header" android:layout_alignParentLeft="true" android:layout_marginLeft="15dp"
-                android:layout_alignParentTop="true" android:layout_marginTop="38dp"
+                android:text="TNEB UnitCalculator"
+                android:id="@+id/header"
                 android:textSize="25dip"
-                android:textColor="#0b84aa"
+                android:textColor="#fffafe"
+                android:typeface="normal"
+                android:layout_centerHorizontal="true"
                 />
-        <TextView
+                <!--android:layout_alignParentLeft="true" android:layout_marginLeft="47dp"
+                android:layout_alignParentTop="true" -->
+
+        <TableLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Net Amount Rs:"
-                android:id="@+id/textView"
-                android:textSize="20dp"
-                android:textColor="#0b84aa" android:layout_alignParentLeft="true" android:layout_marginLeft="28dp"
-                android:layout_alignTop="@+id/amount"/>
-        <TextView
-                android:layout_width="123dp"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:id="@+id/amount" android:layout_alignParentLeft="true" android:layout_marginLeft="165dp"
-                android:layout_centerVertical="true"
-                android:textSize="20dp"
-                android:textColor="#0f110e" />
+                android:stretchColumns="*"
+                android:background="#010001"
+                android:layout_marginTop="45dp"
+                android:padding="8dp"
+                >
+            <TableRow android:layout_marginBottom="1dp" android:background="#000000">
+                 <TextView android:text="Units Entered:"
+                           android:layout_weight="70"
+                           android:textSize="20dp"
+                           android:padding="20dp" />
+                 <TextView android:layout_height="wrap_content"
+                           android:layout_weight="30"
+                           android:text=""
+                           android:gravity="right"
+                           android:textSize="20dp"
+                           android:id="@+id/unitsEntered"
+                           android:padding="15dp" />
+            </TableRow>
+            <View
+                    android:layout_height="2dip"
+                    android:background="#FF0000" />
+            <TableRow android:layout_marginBottom="2dp" android:background="#000000">
+                 <TextView android:text="Consumption charges:"
+                           android:layout_weight="70"
+                           android:layout_width="20dp"
+                           android:textSize="20dp"
+                           android:padding="20dp"/>
+                 <TextView android:layout_height="wrap_content"
+                           android:layout_weight="30"
+                           android:layout_width="100dp"
+                           android:id="@+id/consumption"
+                           android:text=""
+                           android:gravity="right"
+                           android:textSize="20dp"
+                           android:padding="15dp" />
+            </TableRow>
+            <TableRow  android:background="#000000">
+                 <TextView android:text="FixedCharge:"
+                           android:layout_weight="70"
+                           android:textSize="20dp"
+                           android:padding="20dp" />
+                <TextView android:layout_height="wrap_content"
+                          android:layout_weight="30"
+                          android:layout_width="100dp"
+                          android:id="@+id/fixedCharge"
+                          android:text=""
+                          android:gravity="right"
+                          android:textSize="20dp"
+                          android:padding="15dp" />
+            </TableRow>
+            <View
+                    android:layout_height="2dip"
+                    android:background="#FF0000" />
+            <TableRow  android:background="#000000">
+                 <TextView android:text="Net Amount Rs:"
+                           android:layout_weight="70"
+                           android:textSize="20dp"
+                           android:padding="20dp" />
+                <TextView android:layout_height="wrap_content"
+                          android:layout_weight="30"
+                          android:id="@+id/amount"
+                          android:layout_width="100dp"
+                          android:text=""
+                          android:gravity="right"
+                          android:textSize="20dp"
+                          android:padding="15dp" />
+            </TableRow>
+            <View
+                    android:layout_height="2dip"
+                    android:background="#FF0000" />
+        </TableLayout>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Go Back"
                 android:textSize="20dp"
-                android:id="@+id/goBack"
-                android:textColor="#0b84aa"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="324dp"/>
+                android:typeface="normal"
+                android:autoLink="phone"
+                android:id="@+id/goBack" android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+                android:layout_marginTop="380dp" android:textColor="#4adbff"/>
     </RelativeLayout>
 </ScrollView>
