@@ -12,7 +12,9 @@ Note that you have set up a proper android environment. You need to add your sdk
     sdk.dir=path-to-your-android-sdk
 
 Once that is done you can issue `ant` commands to build the projects. The list of `ant` commands 
-can be found [here][http://developer.android.com/tools/building/building-cmdline.html#AntReference].
+can be found [here][1].
+
+[1]: http://developer.android.com/tools/building/building-cmdline.html#AntReference
 
 To release the *signed* app, set up the key in our local machine and add its path details to
 `local.properties` like:
