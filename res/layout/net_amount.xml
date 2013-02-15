@@ -13,15 +13,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TNEB UnitCalculator"
+                android:paddingTop="10dp"
                 android:id="@+id/header"
                 android:textSize="25dip"
                 android:textColor="#fffafe"
                 android:typeface="normal"
                 android:layout_centerHorizontal="true"
                 />
-                <!--android:layout_alignParentLeft="true" android:layout_marginLeft="47dp"
-                android:layout_alignParentTop="true" -->
-
         <TableLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -94,7 +92,8 @@
             </TableRow>
             <View
                     android:layout_height="2dip"
-                    android:background="#FF0000" />
+                    android:background="#FF0000"
+                    />
         </TableLayout>
         <TextView
                 android:layout_width="wrap_content"

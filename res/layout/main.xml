@@ -18,12 +18,12 @@
                 android:textColor="#f9f7fd"
                 android:layout_centerHorizontal="true"
                 android:typeface="normal"/>
-        <LinearLayout
+        <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true">
+                android:layout_centerHorizontal="true" android:id="@+id/relativeLayout">
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -32,22 +32,31 @@
                     android:textSize="25dip"
                     android:textColor="#ebf0f2"
                     android:padding="8dp"
+                    android:layout_centerHorizontal="true"
                     />
             <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:hint="units"
+                    android:hint="Units"
+                    android:ellipsize="start"
+                    android:gravity="center"
                     android:id="@+id/editText"
                     android:singleLine="true"
                     android:inputType="number"
                     android:padding="8dp"
-                    />
-        </LinearLayout>
-        <Button
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:text="Calculate"
-                android:id="@+id/button"
-                android:layout_centerHorizontal="true" android:layout_alignParentBottom="true"/>
+                    android:layout_centerHorizontal="true" android:layout_below="@+id/textView"/>
+            <Button
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Calculate"
+                    android:textSize="18dp"
+                    android:textColor="#ffedf3"
+                    android:id="@+id/button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150dp"
+                    android:background="@drawable/gradient" android:textColorHint="#ff7738"
+                    android:textColorHighlight="#c0ff2b" android:visibility="visible" android:typeface="normal"
+                    android:shadowColor="#ff1c91"/>
+        </RelativeLayout>
     </RelativeLayout>
 </ScrollView>
