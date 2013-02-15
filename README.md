@@ -32,4 +32,7 @@ The app can be downloaded from google play store from [here][2]
 
 [2]: https://play.google.com/store/apps/details?id=in.tneb.calculator#?t=W251bGwsMSwxLDIxMiwiaW4udG5lYi5jYWxjdWxhdG9yIl0.
 
+This project is released under [MIT license see here][3].
+[3]:
+
         
